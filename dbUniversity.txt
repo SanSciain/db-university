@@ -32,10 +32,10 @@ FROM `degrees`
 WHERE `level` = "magistrale";
 
 7
-SELECT *
+SELECT COUNT(*) as `departments_number`
 FROM `departments`;
 
 8
-SELECT *
+SELECT COUNT(*) as `teachers_number_without_number`
 FROM `teachers`
 WHERE `phone` IS NULL;
