@@ -1,0 +1,20 @@
+1
+SELECT COUNT(`students`.`id`) as `students_number_each_year`, YEAR(`students`.`enrolment_date`) as `year`
+FROM `students`
+GROUP BY `year`
+ORDER BY `year`;
+
+2
+SELECT COUNT(`teachers`.`id`) as `teacher_number`, `teachers`.`office_address`
+FROM `teachers`
+GROUP BY `teachers`.`office_address`;
+
+3
+SELECT `exam_student`.`exam_id` as `exam`,  AVG(`exam_student`.`vote`) as `average`
+FROM `exam_student`
+GROUP BY `exam_student`.`exam_id`;
+
+4
+SELECT `degrees`.`department_id` as `department`,  COUNT(`degrees`.`id`) as `degrees`
+FROM `degrees`
+GROUP BY `degrees`.`department_id`;
