@@ -13,6 +13,10 @@ SELECT *
 FROM `students`
 WHERE DATE(`date_of_birth`) >= DATE("1991-06-20");
 
+oppure
+SELECT *
+FROM `students`
+WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`,CURDATE()) > 30;
 
 4
 SELECT *
