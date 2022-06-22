@@ -15,9 +15,9 @@ AND `departments`.`name` = "Dipartimento di Neuroscienze";
 
 3
 SELECT *
-FROM `degrees`
+FROM `courses`
 INNER JOIN `course_teacher`
-ON `degrees`.`id` = `course_teacher`.`course_id`
+ON `courses`.`id` = `course_teacher`.`course_id`
 WHERE `course_teacher`.`teacher_id` = 44;
 
 4
